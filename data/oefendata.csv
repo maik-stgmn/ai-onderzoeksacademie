@@ -1,0 +1,13 @@
+id,groep,score_voor,score_na,uren_zelfstudie
+1,training,4,7,2
+2,training,5,8,3
+3,training,6,8,2
+4,training,3,6,4
+5,training,7,9,1
+6,training,5,7,3
+7,controle,4,5,2
+8,controle,6,6,2
+9,controle,5,6,3
+10,controle,3,4,1
+11,controle,7,7,4
+12,controle,5,,2
