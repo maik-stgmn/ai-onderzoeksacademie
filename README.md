@@ -1,21 +1,30 @@
-# AI Onderzoeksacademie
+# AI Onderzoeksacademie — testbranch
 
-Interactieve Nederlandstalige leermodule met zeven productgerichte lessen over zorgvuldig en efficiënt onderzoek met AI.
+Deze versie bevat zeven zelfstandige lessen met verdiepte theorie, casusmateriaal, productopdrachten, rubrics, zelfbeoordeling, oefendata, controleuitkomsten, bronverwijzingen en een docentenhandleiding.
 
-## Gebruik
+## Starten
 
-Open de gepubliceerde GitHub Pages-website of `index.html` lokaal.
+Open `index.html` via GitHub Pages of een eenvoudige lokale server: `python -m http.server 8000` en open `http://localhost:8000`. De bestanden laden relatief; geen bundler en geen backend nodig.
 
-De lessen bevatten theorie, voorbeelden, opdrachten en huiswerk. Een eigen onderzoeksproject is niet vereist.
+## Structuur
 
-## Techniek
+- `index.html`: toegankelijke website-skelet
+- `style.css`: opmaak en mobiele weergave
+- `app.js`: navigatie, kennischecks, voortgang en export
+- `data/lessons.js`: bewerkbare inhoud van zeven lessen
+- `data/oefendata.csv` + `data/codeboek.md`: synthetische analyse-oefening
+- `data/broncontrole-oefening.md`: audit-claims en primaire bronlocaties
+- `docs/docentenhandleiding.md`: begeleiding en beoordelingskaders
+- `docs/bronnen.md`: bronbasis en beperkingen
 
-De site is één zelfstandig HTML-bestand, zonder build-stap. Voortgang wordt lokaal in de browser bewaard en kan als portfolio worden geëxporteerd.
+## Privacy en leerstatus
 
-## Inhoudelijke status
+Antwoorden blijven op dit apparaat in `localStorage`; exporteer het portfolio als JSON. De status 'zelf beoordeeld' is geen onafhankelijke beoordeling. Geen inlog, centrale opslag of echte uploads.
 
-Dit is een onderwijsprototype; bronnen, didactische kwaliteit en browserfunctionaliteit moeten vóór brede inzet worden geëvalueerd. Controleer AI-gegenereerde claims en verwijzingen onafhankelijk.
+## Publicatie
 
-## Publiceren met GitHub Pages
+Dit is een testbranch. `main` blijft ongewijzigd. GitHub Pages met alleen `main` publiceert deze variant **niet automatisch**: gebruik een afzonderlijke previewdeployment of test lokaal na downloaden/branch-clone.
 
-Ga naar **Settings → Pages → Build and deployment → Deploy from a branch** en selecteer **main** en **/(root)**.
+## Bekende grenzen
+
+Geen integratie met AI-provider of LMS, geen servermatige inlevering, geen automatisch inhoudelijk cijfer. Methodologische voorbeeldantwoorden en tijdsbelasting zijn nog niet empirisch gevalideerd. Controleer zowel inhoud als toegankelijkheid met een studentpilot.
